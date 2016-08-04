@@ -1,0 +1,145 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*====== Base styles ======*/
+body {
+  background-color: #EBEBEB;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 62.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+/*====== Buttons ======*/
+
+.button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 0.3rem;
+}
+
+.button:hover {
+  color: #7EBDFC;
+}
+
+.action {
+  background-color: #7EBDFC;
+  color: white;
+}
+
+.alert {
+  color: white;
+  background-color: #FF5C5C;
+}
+
+.button.action:hover, .button.alert:hover {
+  color: white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
+}
+
+/*====== Menu bar ======*/
+
+.top-bar {
+  background-color: white;
+  height: 56px;
+  padding: 12px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 144px;
+}
+
+/*====== Main content ======*/
+
+.main-content {
+  padding: 48px 0 0 12px;
+  z-index: 0;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16);
+}
+
+.card--padding {
+  padding: 32px;
+}
+
+.post-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-index--box {
+  height: 340px;
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+.post-index--box__image {
+  height: 300px;
+  width: 300px;
+}
+
+.post-show--box {
+  width: 300px;
+  padding: 32px;
+}
+
+.post-show--image {
+  width: 500px;
+  height: 500px;
+}
+
+/*====== Forms ======*/
+
+label {
+	float: left;
+	text-align: left;
+  margin: 8px 16px 8px 0;
+	width: 100%;
+  color: gray;
+}
+
+input, textarea {
+  width: calc(100% - 16px);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
