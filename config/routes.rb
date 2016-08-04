@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  
-  get 'index'=>'static_pages#index'
-  get 'show'=>'static_pages#show'
-  get 'new'=>'static_pages#new'
+
+  root 'static_pages#index'
+  get 'show/:id'=>'static_pages#show', as: :show_picture
+  get 'new'=>'static_pages#new', as: :new_picture
+  post 'create'=>'static_pages#create', as: :create_picture
+  delete 'delete'=>'static_pages#delete', as: :delete_picture
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
