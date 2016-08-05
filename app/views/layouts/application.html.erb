@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Railspics2</title>
-  
+
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,11 +11,8 @@
 
   <header class="top-bar">
     <div class="row">
-      <a href="./index.html">
-        
-        <%= image_tag('logo.svg',class: 'logo', alt: "Railspics logo") %>
-      </a>
-      <a class="button" href="./new.html">Agregar foto</a>
+      <%= link_to image_tag('logo.svg',class: 'logo', alt: "Railspics logo"), root_path%>
+      <%= link_to 'Agregar foto', new_picture_path, class:'button'%>
     </div>
   </header>
 

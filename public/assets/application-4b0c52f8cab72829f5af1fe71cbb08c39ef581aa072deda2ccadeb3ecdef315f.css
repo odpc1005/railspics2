@@ -1,0 +1,621 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 9, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 19, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 32, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 51, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 62, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 71, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 80, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 93, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 103, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 116, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 126, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 135, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 144, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 153, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 162, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 171, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 180, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 188, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 192, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 203, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 211, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 223, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 235, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 244, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 258, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 270, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 279, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 289, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 300, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 311, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 323, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 334, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 347, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 360, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 369, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 379, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 389, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+/* line 398, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+/* line 407, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 417, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/*====== Base styles ======*/
+/* line 7, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #EBEBEB;
+}
+
+/* line 11, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 62.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 22, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 29, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 35, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.flex-center {
+  justify-content: center;
+}
+
+/*====== Buttons ======*/
+/* line 41, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 0.3rem;
+}
+
+/* line 50, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.button:hover {
+  color: #7EBDFC;
+}
+
+/* line 54, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.action {
+  background-color: #7EBDFC;
+  color: white;
+}
+
+/* line 59, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.alert {
+  color: white;
+  background-color: #FF5C5C;
+}
+
+/* line 64, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.button.action:hover, .button.alert:hover {
+  color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+/*====== Menu bar ======*/
+/* line 71, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.top-bar {
+  background-color: white;
+  height: 56px;
+  padding: 12px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+}
+
+/* line 82, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.logo {
+  width: 144px;
+}
+
+/*====== Main content ======*/
+/* line 88, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.main-content {
+  padding: 48px 0 0 12px;
+  z-index: 0;
+}
+
+/* line 93, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.card {
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* line 98, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.card--padding {
+  padding: 32px;
+}
+
+/* line 102, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.post-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 109, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.post-index--box {
+  height: 340px;
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+/* line 115, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.post-index--box__image {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 120, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.post-show--box {
+  width: 300px;
+  padding: 32px;
+}
+
+/* line 125, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+.post-show--image {
+  width: 500px;
+  height: 500px;
+}
+
+/*====== Forms ======*/
+/* line 132, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+label {
+  float: left;
+  text-align: left;
+  margin: 8px 16px 8px 0;
+  width: 100%;
+  color: gray;
+}
+
+/* line 140, /Users/coffey/programming/rails_apps/rails_girls/app/assets/stylesheets/static_pages.scss */
+input, textarea {
+  width: calc(100% - 16px);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
