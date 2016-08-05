@@ -1,54 +1,12 @@
 <div class="main-content">
     <div class="row post-index">
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/1" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
+      <% @pictures.each do |picture| %>
+        <div class="card post-index--box">
+          <%= image_tag picture.image_url, class:'post-index--box__image', alt:"food picture" %>
+          <div class="flex-row">
+            <%= link_to 'Ver', show_picture_path(picture)%>
+          </div>
         </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/2" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/3" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/4" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/5" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/6" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
-      <div class="card post-index--box">
-        <img class="post-index--box__image" src="http://lorempixel.com/500/500/food/7" alt="food picture" />
-        <div class="flex-row">
-          <a href="./show.html" class="button">Ver</a>
-        </div>
-      </div>
-
+      <% end %>
     </div>
   </div>
